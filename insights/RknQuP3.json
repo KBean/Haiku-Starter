@@ -1,0 +1,231 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "revenue_loss",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 30000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "stacked_columns",
+      "variant": "normal",
+      "name": "Sum of revenue_loss by cluster_labels",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "revenue_loss",
+          "type": "NUMERICAL",
+          "numParams": {
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS",
+            "mode": "FIXED_NB",
+            "nbBins": "20"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of revenue_loss, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of revenue_loss, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "cluster_labels",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of revenue_loss, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Sum of revenue_loss, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Sum of revenue_loss, descending"
+          }
+        }
+      ],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "revenue_loss",
+          "function": "SUM",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 1
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": false,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": false,
+      "strokeWidth": 1,
+      "fillOpacity": 0.5,
+      "showXAxisLabel": false,
+      "showYAxisLabel": false,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": false,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.9,
+        "colorPalette": "dku_dss_next",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "mapquest-std",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAC9ElEQVRoQ2NkGGGAkdr+lfJe/Axk5rOtsVLUNpsa5o16mNJQnKjWD47h/FuFIyOGRz1MaZLBpn/dHXAqAoMgFZJSEtXz8CVBR7Bj9N7vJ8khJIXLqIeJD67BHcPrrgszMLBexki6wzaGh5qHKW6EDFYPw6oiUNJzfL0JnAJBhdaI83CtzqQLIM83X8kzIL5YQVI5WGMYVhUhewoUwxQ3Qoaah7HVybBkTlQHYyh4WDHtCziieTtPS2HzMHJ+J9jeHvUwNNMMdD2MnId1Nz8Bu4rR5rbU53JTcDNT7WreE8b/DDIg9o5j8+BZnWDzEymGJ1ZshuvL7/BFFBcD0ZZ+n212BeYCgcj3QuR4GGsVhpykcRXzA+FhWEyC3MTj+wEew/+PqIJjWKqjjmAMDysPT0rKAqVzcJJOClwGjyv1KzlxME757XeLQGyUgmyoxvBlH9knDIz/wR6GleJgz+1JegXzcMG9VWKwFho8RIabh+etj4L7DblJOug9DMuryOUKqJSGiX/eLPCEEZqkkdXg8jA8Pyeb6MK7h4Op0EL2cC8TZKCjxOogQQ/fn8UD9wZygwXeJO3wGFoe7jlmDy6li/89gxdaXzYLwD2Jy8PwFtrcaaMexkjZA1EP40rS2GIY2cHIsY1cfz9LNL0Prr99F5kQzMNwAxlzGIKU1+HK6jBxsse0kBsbM/25MOwB5WEGaJv3v5gnPEkT42FYADK+2kQ4SQ9GD/dIJMM9XPwPMaSMLTZApTssoBgYfg8vD8NKdGjBBm+SDnkPMzAwwGP4v5gnPGJHhId7JJKxlitaDN9egCS8rE4bDasYduXZ/B/mY3eeDRiFJnJhR3IeZvg/BWw2nqqK7FL61RHNMzCHL2ISg88jlbyYCxEGWYoYmcBaSmOLbap5GGY3mudJ8jChqgjcpCTBw8hpG+b5EeNhuOdRUgaJ1RJykkYe94IZHqQiRVQMfy43iYDoYeyD6cXW2KAkhgeVhwk114aSPFExPJQ8RMitANG4ZEciibQDAAAAAElFTkSuQmCC",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "jnam",
+  "listed": false,
+  "name": "Sum of revenue_loss by cluster_labels on revenue_loss",
+  "dashboardCreationId": "4A29MtD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1607036021682
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1607036021682
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

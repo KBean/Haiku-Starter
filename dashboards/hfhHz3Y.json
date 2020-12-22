@@ -1,0 +1,156 @@
+{
+  "pages": [
+    {
+      "id": "jO3ngp4",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 6,
+              "width": 6,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Churners Rate / States",
+            "insightId": "buAQWhZ",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 3,
+              "width": 3,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Customers Count / Total Charge",
+            "insightId": "RZHwNd5",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 3,
+              "width": 3,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Churners Rate / Total Charge",
+            "insightId": "woDzSeT",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 6,
+              "width": 6,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Customers / States",
+            "insightId": "xmXxXAu",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 3,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": true,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Chuners Rate",
+            "insightId": "z6TYO0w",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          }
+        ]
+      },
+      "title": "Customers \u0026 Churners",
+      "showTitle": true
+    }
+  ],
+  "owner": "admin",
+  "listed": true,
+  "name": "Descriptive Statistics on the Customers",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 73,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1607036159719
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1485789536644
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

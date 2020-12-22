@@ -1,0 +1,30 @@
+{
+  "projectKey": "DKU_CHURN_10",
+  "id": "AUTOMATION",
+  "type": "step_based",
+  "name": "automation",
+  "active": false,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1607049523004
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

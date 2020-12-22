@@ -1,0 +1,258 @@
+{
+  "pages": [
+    {
+      "id": "T151Z94",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 7,
+              "width": 5,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Forecast Loss / Segments",
+            "insightId": "EYZZSHS",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 5,
+              "width": 2,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": false,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Forecast Loss / States",
+            "insightId": "NCi2YiP",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 7,
+              "left": 0,
+              "width": 4,
+              "height": 14
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "bc_confusion"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Confusion Matrix",
+            "insightId": "vReATi5",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "IMAGE",
+            "box": {
+              "top": 6,
+              "left": 5,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "autoLoad": true,
+            "showTitle": "MOUSEOVER",
+            "displayMode": "IMAGE",
+            "imageId": "dokkhqw",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 0,
+              "width": 5,
+              "height": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "variables_importance"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Variables importance",
+            "insightId": "xoqKvbY",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 9,
+              "left": 4,
+              "width": 8,
+              "height": 11
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "ensemble_summary"
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "insightId": "reHKbCg",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 5,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "__Churn Prediction Model (Random Forest)__\n\nSee below some model insights\n\n▼▼▼▼▼",
+              "textAlign": "CENTER",
+              "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 5,
+              "width": 7,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "__Who are the customers that are likely to churn ?__\n\nand how much it will cost the company\n\n▼▼▼▼▼",
+              "textAlign": "CENTER",
+              "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 4,
+              "left": 7,
+              "width": 5,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "Another dashboard is available to [understand this segmentation](/projects/DKU_CHURN/dashboards/Sf9Bzu5_segments-analysis/view/z3jCbn4).\n\n__Customers ranked by churn risk__\n\n\n▼▼▼▼▼",
+              "textAlign": "CENTER",
+              "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 8,
+              "left": 4,
+              "width": 7,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "__Visualize the trees of the Random Forest__\n\nClick on the tree node to (un)fold\n\n▼▼▼▼▼",
+              "textAlign": "CENTER",
+              "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 5,
+              "left": 7,
+              "width": 5,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": true,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "title": "Forecast total revenue loss by spender category, colored by cluster",
+            "insightId": "Xq5BgdN",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE"
+          }
+        ]
+      },
+      "title": "Customers likely to churn",
+      "showTitle": false
+    }
+  ],
+  "owner": "admin",
+  "listed": true,
+  "name": "Forecasting Customers that are likely to churn",
+  "showGrid": false,
+  "versionTag": {
+    "versionNumber": 102,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1607036032869
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202171
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

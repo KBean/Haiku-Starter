@@ -1,0 +1,181 @@
+{
+  "type": "PostgreSQL",
+  "managed": true,
+  "formatType": "parquet",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "parquetLowerCaseIdentifiers": false,
+    "representsNullFields": false,
+    "parquetCompressionMethod": "SNAPPY",
+    "parquetFlavor": "HIVE",
+    "parquetBlockSizeMB": 128
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "jnam"
+    },
+    "lastModifiedOn": 1608652517770
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1511270538999
+  },
+  "tags": [
+    "creator_admin"
+  ],
+  "params": {
+    "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
+    "connection": "PostgreSQL",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${projectKey}_unlabeled_customers_within_segments",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "Account_Length",
+        "type": "bigint"
+      },
+      {
+        "name": "Area_Code",
+        "type": "bigint"
+      },
+      {
+        "name": "Phone",
+        "type": "string"
+      },
+      {
+        "name": "Intl_Plan",
+        "type": "boolean"
+      },
+      {
+        "name": "VMail_Plan",
+        "type": "boolean"
+      },
+      {
+        "name": "VMail_Message",
+        "type": "bigint"
+      },
+      {
+        "name": "Day_Mins",
+        "type": "double"
+      },
+      {
+        "name": "Day_Calls",
+        "type": "bigint"
+      },
+      {
+        "name": "Day_Charge",
+        "type": "double"
+      },
+      {
+        "name": "Eve_Mins",
+        "type": "double"
+      },
+      {
+        "name": "Eve_Calls",
+        "type": "bigint"
+      },
+      {
+        "name": "Eve_Charge",
+        "type": "double"
+      },
+      {
+        "name": "Night_Mins",
+        "type": "double"
+      },
+      {
+        "name": "Night_Calls",
+        "type": "bigint"
+      },
+      {
+        "name": "Night_Charge",
+        "type": "double"
+      },
+      {
+        "name": "Intl_Mins",
+        "type": "double"
+      },
+      {
+        "name": "total_Mins",
+        "type": "double"
+      },
+      {
+        "name": "Intl_Calls",
+        "type": "bigint"
+      },
+      {
+        "name": "Intl_Charge",
+        "type": "double"
+      },
+      {
+        "name": "Total_Charge",
+        "type": "double"
+      },
+      {
+        "name": "CustServ_Calls",
+        "type": "bigint"
+      },
+      {
+        "name": "Churn",
+        "type": "string"
+      },
+      {
+        "name": "cluster_labels",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "metrics": {
+    "probes": []
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
