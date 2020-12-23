@@ -1,55 +1,61 @@
 {
-  "steps": [
-    {
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "revenue_loss",
-        "expression": "prediction * ( Total_Charge - (proba_0 * Total_Charge))"
-      },
-      "metaType": "PROCESSOR",
-      "preview": true,
-      "disabled": false,
-      "alwaysShowComment": false
-    }
-  ],
-  "maxProcessedMemTableBytes": -1,
-  "origin": "PREPARE_RECIPE",
   "columnsSelection": {
     "mode": "ALL"
   },
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
-  },
-  "sorting": [],
-  "analysisColumnData": {},
   "explorationSampling": {
+    "_refreshTrigger": 0,
     "selection": {
-      "maxStoredBytes": -1,
       "filter": {
         "distinct": false,
         "enabled": false
       },
-      "partitionSelectionMethod": "ALL",
       "latestPartitionsN": 1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
       "maxRecords": 30000,
-      "targetRatio": 0.02,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
       "withinFirstN": -1,
-      "maxReadUncompressedBytes": -1
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": -1,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
     },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
+    "autoRefreshSample": false
   },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
   },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "prediction * ( Total_Charge - (proba_0 * Total_Charge))",
+        "column": "revenue_loss"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {},
+  "sorting": [],
   "globalSearchQuery": "",
-  "explorationFilters": [],
-  "previewMode": "ALL_ROWS"
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
 }
