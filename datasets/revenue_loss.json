@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "jnam"
     },
-    "lastModifiedOn": 1608691148155
+    "lastModifiedOn": 1608652517800
   },
   "creationTag": {
     "versionNumber": 0,
@@ -153,6 +153,10 @@
         "type": "double"
       },
       {
+        "name": "ratio_charge_min",
+        "type": "double"
+      },
+      {
         "name": "CustServ_Calls",
         "type": "double"
       },
@@ -165,11 +169,11 @@
         "type": "string"
       },
       {
-        "name": "proba_false",
+        "name": "proba_0",
         "type": "double"
       },
       {
-        "name": "proba_true",
+        "name": "proba_1",
         "type": "double"
       },
       {

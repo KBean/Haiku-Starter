@@ -1,5 +1,5 @@
 {
-  "type": "clustering_training",
+  "type": "prediction_training",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
@@ -16,7 +16,7 @@
     "main": {
       "items": [
         {
-          "ref": "customers_prepared",
+          "ref": "customers_within_segments",
           "deps": []
         }
       ]
@@ -26,25 +26,18 @@
     "main": {
       "items": [
         {
-          "ref": "h3vWJM0d",
+          "ref": "5HExUjQ1",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 5,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "jnam"
     },
-    "lastModifiedOn": 1608691576980
-  },
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1608691576980
+    "lastModifiedOn": 1607035949738
   },
   "tags": [],
   "customFields": {},
