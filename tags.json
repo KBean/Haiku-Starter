@@ -18,6 +18,8 @@
       "color": "#1ac2ab"
     },
     "churn": {},
-    "telco": {}
+    "telco": {},
+    "supervised_learning": {},
+    "unsupervised_learning": {}
   }
 }
