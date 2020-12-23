@@ -2,7 +2,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Churn prediction model ( RANDOM_FOREST)",
-  "activeVersion": "1608690831831",
+  "activeVersion": "1608690943218",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -14,7 +14,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_CHURN_10-a7QE8ig7-ecsqyuFW-s4-pp1-m1",
+  "lastExportedFrom": "A-DKU_CHURN_10-qXEHpSgT-7toHkLcV-s1-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1661,6 +1661,10 @@
       "containerMode": "INHERIT"
     },
     "sparkParams": {
+      "sparkConf": {
+        "inheritConf": "default",
+        "conf": []
+      },
       "sparkUseGlobalMetastore": false,
       "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
       "sparkRepartitionNonHDFS": 1,
@@ -1739,11 +1743,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608690831940
+    "lastModifiedOn": 1608690943305
   },
   "tags": [],
   "customFields": {},
