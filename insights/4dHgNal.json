@@ -1,0 +1,181 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "customers_prepared",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 30000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "scatter",
+      "variant": "normal",
+      "name": "Churner by Total_Charge and VMail_Message",
+      "userEditedName": true,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [
+        {
+          "column": "Total_Charge",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaYDimension": [
+        {
+          "column": "VMail_Message",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [
+        {
+          "column": "Churn",
+          "type": "ALPHANUM",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "ALPHANUM_FACET",
+          "column": "VMail_Plan",
+          "columnType": "ALPHANUM",
+          "isA": "filter",
+          "excludedValues": {
+            "___dku_no_value___": true
+          },
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": false,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": false,
+      "strokeWidth": 1,
+      "fillOpacity": 0.5,
+      "showXAxisLabel": false,
+      "showYAxisLabel": false,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": false,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#659a88",
+        "transparency": 0.9,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "mapquest-std",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAFCklEQVRoQ+2XbWwURRjHn9kWWq2GF2uxpb292iKESyMJL4KNhkajpDfbS20sBl++mKhfxDZ6u6fRXA9NvN2iVPlgSDREJSSWAC07V+ADVtGibTESEQ3Q5m62TQVs0CiobXo7Zg+2lGvr3ra9g9rul7u9eeaZ/2/+z7wcghn2oBnGC7PA/3fHb7jDvES+pTJem6qJvuHAqQI1x0k5MC+RPirjvEJJfSYsC5/YAeYl0k1lXGSnT3xsSoD3HTvXV9t8HAzQscTykvomlYU3JgOSaN8JA/OS2kJloTx+IN5HttIgfiVRAWNOgBjaTRX3psnkGK/vhIGtxPAiiVAFO824Ja+FvhyMssVUxsXGb4brj91/V97dUuM8Xc9coTNWoG317DLadraG58+/LWtd5eqcg1bj2G1PGrApxFyzVsKcvlAtY8xrlL3Dp6paUBDMvsYnMP1rqlRUW+Wxap8y4Lw6NbuvTuh3+MhKLYi/A4hdali8AIdI2jUF37fyuR1z+hfkPgwMfdBQuepy5bpc16jl4VVbdaRv61E8B0a2OSRyRpPxPVZwY7VPGfBYyQtfal4Ufs9z3mzb29a/uqo0u9N8L5YOuboyv/kZAgG9wNvyyNrIpSPtjrlLURpaRhXPvgIp9GCP7D56XW5/azoEyobA7+eMfnahpwQ40bIdLnNRjVJFSLv2TnSqYI4X1YtUERbyIukCYE6qCOkTBUvppjW89nzkLRrEr5uDx46npuMZVMF38D71SdDhY2BQxxDUaIqQzYtqFBAaoDK+lRdJD7ola0kkUPYPL6qXAdAvjIONDRWrVGOzs+usGT8lDpvJlvsb5/4UqB6MF9PScjbjhaOnF+tRlpYOXFak3n3CiOFFUkYV3Or3M27nQGieFsS/rfe3pn8RKBsycrlcEN1z6hSLK90x94ZEJ2BKgK1K2jyCjDjG4AeEwDXnr99dXduf+iNfCpX0yu6ThuAC7/4ixKVXIQYyYmnrGafvAqYPAeIyxru0JAqaFIdHrMnPb89ML/1xy4aMkccTAPcsgP6RId4pkTORqzutQwo9r8nuHUasMTk1TZ2XNEWI7cJOMTTIEOsyvlMZLy9+teXOrrfLf7ULmlRgI3lR3eGc7rpHLzh8ZIGWkfUnP/B3CQ2Wfz9SKGMMIYRYY8eFFdVrck4Uis1Lw4rndKIwZv9E4424KSnp+AHNEnf4yEktiEuMcXhRjQCgLTqC3h4ZH76yhq/frUflEVVGFYG7dp77OYArRxEvEUJljO3AJg3YSoQBihCcjcjCsqvi+4CxRcZRxUvqeWCQQxUhZkbslgWAqIxzeS/5lNbjp632jP8aPyGHHRJ5UZPxdiuQ0U6rm6gs7I4J9x44QusrHip8OcSH33FTM7ZY3JvfpVT1jpebF8mHUS4a7A16Yut4vMfhbS7V6j1tVhoTArZKYrd9/7FznZub2j0ccAepItxr9ndIaocmC2vGy+cUSU1EwQ12xxsZnzTg+LIzjyazTEceM5MpUbvwyQF+vDEN9lRHTZCN77cVfba5tNsQ5xRVLaIIDqekdkSG3WQIAMX+aCQbPjnAAFDoJQ+E6/FXdh1IdnzSgO0Id0rkCQbwrtVtihdJG1VwqZ3c8bE3BfBkAOz2vemA82sPLezdtuGiXZBE41MCzEukh8q4IFFRyYxLCXAyAezmngW2O2PTLX7W4enmmF29sw7bnbHpFj/r8HRzzK7eGefwv8okDEfTRdnNAAAAAElFTkSuQmCC",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Churner by Total_Charge and VMail_Message on customers_prepared",
+  "dashboardCreationId": "4A29MtD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1608695488301
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1608695488301
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
