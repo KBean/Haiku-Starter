@@ -1,6 +1,6 @@
 {
   "envSelection": {
-    "envMode": "INHERIT"
+    "envMode": "USE_BUILTIN_MODE"
   },
   "modeling": {
     "max_iterations": 0,
@@ -9,7 +9,7 @@
     "coef0": 0.0,
     "n_jobs": 2,
     "min_sample_ratio": 0.0,
-    "k": 7,
+    "k": 8,
     "metrics": {
       "customEvaluationMetricGIB": true,
       "evaluationMetric": "SILHOUETTE"
@@ -31,7 +31,7 @@
     "custom_has_k": false,
     "algorithm": "KMEANS"
   },
-  "generatingModelId": "A-DKU_CHURN_10-To45m4yi-IRL6lq6i-s13-pp1-m2",
+  "generatingModelId": "A-DKU_CHURN_10-To45m4yi-IRL6lq6i-s14-pp1-m3",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
