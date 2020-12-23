@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER"
     }
   },
   "customMeta": {
@@ -33,11 +33,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1607035949738
+    "lastModifiedOn": 1608691982849
   },
   "tags": [],
   "customFields": {},
