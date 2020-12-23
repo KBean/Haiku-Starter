@@ -135,11 +135,11 @@
   "name": "Descriptive Statistics on the Customers",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 73,
+    "versionNumber": 74,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1607036159719
+    "lastModifiedOn": 1608691388414
   },
   "creationTag": {
     "versionNumber": 0,
