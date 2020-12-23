@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1608652517747
+    "lastModifiedOn": 1608692272672
   },
   "tags": [
     "creator_admin"
@@ -286,12 +286,10 @@
         "reporting:WARNING_COUNT",
         "reporting:BUILD_SUCCESS",
         "basic:COUNT_COLUMNS",
-        "basic:COUNT_FILES",
         "col_stats:MAX:VMail_Plan",
         "reporting:METRICS_COMPUTATION_DURATION",
         "col_stats:MIN:VMail_Plan",
-        "records:COUNT_RECORDS",
-        "basic:SIZE"
+        "records:COUNT_RECORDS"
       ]
     }
   },
