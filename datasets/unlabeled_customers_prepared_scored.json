@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608691605881
+    "lastModifiedOn": 1608691609222
   },
   "creationTag": {
     "versionNumber": 0,
@@ -148,7 +148,7 @@
       },
       {
         "name": "Churn",
-        "type": "boolean"
+        "type": "string"
       },
       {
         "name": "cluster_labels",
