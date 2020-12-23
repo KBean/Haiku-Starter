@@ -174,8 +174,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 24,
+              "left": 0,
               "width": 2,
               "height": 2
             },
@@ -205,11 +205,11 @@
   "name": "Segments Analysis",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608692203650
+    "lastModifiedOn": 1608692232499
   },
   "creationTag": {
     "versionNumber": 0,
