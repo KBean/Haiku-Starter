@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1608652517800
+    "lastModifiedOn": 1618151355631
   },
   "creationTag": {
     "versionNumber": 0,
@@ -153,10 +153,6 @@
         "type": "double"
       },
       {
-        "name": "ratio_charge_min",
-        "type": "double"
-      },
-      {
         "name": "CustServ_Calls",
         "type": "double"
       },
@@ -169,12 +165,16 @@
         "type": "string"
       },
       {
-        "name": "proba_0",
+        "name": "proba_false",
         "type": "double"
       },
       {
-        "name": "proba_1",
+        "name": "proba_true",
         "type": "double"
+      },
+      {
+        "name": "proba_percentile",
+        "type": "bigint"
       },
       {
         "name": "prediction",
@@ -182,11 +182,13 @@
       },
       {
         "name": "revenue_loss",
-        "type": "double"
+        "type": "double",
+        "meaning": "DoubleMeaning"
       }
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": []
   },
