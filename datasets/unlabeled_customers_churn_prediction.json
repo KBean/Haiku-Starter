@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1608652517788
+    "lastModifiedOn": 1618151179787
   },
   "creationTag": {
     "versionNumber": 0,
@@ -153,28 +153,28 @@
         "type": "double"
       },
       {
-        "name": "ratio_charge_min",
-        "type": "double"
-      },
-      {
         "name": "CustServ_Calls",
         "type": "double"
       },
       {
         "name": "Churn",
-        "type": "bigint"
+        "type": "boolean"
       },
       {
         "name": "cluster_labels",
         "type": "string"
       },
       {
-        "name": "proba_0",
+        "name": "proba_false",
         "type": "double"
       },
       {
-        "name": "proba_1",
+        "name": "proba_true",
         "type": "double"
+      },
+      {
+        "name": "proba_percentile",
+        "type": "tinyint"
       },
       {
         "name": "prediction",
@@ -183,6 +183,7 @@
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": []
   },
