@@ -1,171 +1,263 @@
 {
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": -1,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 30000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {},
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
   "charts": [
     {
+      "copySelectionFromScript": true,
+      "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 30000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
       "def": {
-        "colorOptions": {
-          "colorPalette": "dku_dss_next", 
-          "singleColor": "#659a88", 
-          "transparency": 0.9
-        }, 
-        "filters": [
-          {
-            "column": "prediction", 
-            "columnType": "ALPHANUM", 
-            "excludedValues": {
-              "False": true
-            }, 
-            "filterType": "ALPHANUM_FACET"
-          }
-        ], 
+        "type": "stacked_columns",
+        "variant": "normal",
+        "name": "Churnability",
+        "userEditedName": true,
         "genericDimension0": [
           {
-            "column": "proba_True", 
-            "filters": [], 
-            "generateOthersCategory": true, 
-            "isA": "dimension", 
-            "maxValues": 100, 
+            "column": "proba_true",
+            "type": "NUMERICAL",
             "numParams": {
-              "binSize": 100, 
-              "emptyBinsMode": "ZEROS", 
-              "mode": "FIXED_NB", 
-              "nbBins": "20"
-            }, 
-            "possibleNewFilters": [
-              {
-                "group": "Dimension values", 
-                "label": "Value of the dimension", 
-                "maxValue": 9999, 
-                "minValue": 0, 
-                "type": "DIMENSION_VALUES"
-              }, 
-              {
-                "group": "Measure values", 
-                "label": "Count of records", 
-                "measureFilterId": 0, 
-                "type": "MEASURE_VALUES"
-              }
-            ], 
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
             "possibleSorts": [
               {
-                "label": "Natural ordering", 
-                "sortAscending": true, 
-                "type": "NATURAL"
-              }, 
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
               {
-                "label": "Count of records, descending", 
-                "measureIdx": 0, 
-                "type": "AGGREGATION"
-              }, 
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
               {
-                "label": "Count of records, ascending", 
-                "measureIdx": 0, 
-                "sortAscending": true, 
-                "type": "AGGREGATION"
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
               }
-            ], 
+            ],
             "sort": {
-              "label": "Natural ordering", 
-              "sortAscending": true, 
-              "type": "NATURAL"
-            }, 
-            "type": "NUMERICAL"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
           }
-        ], 
+        ],
         "genericDimension1": [
           {
-            "column": "cluster_labels", 
-            "filters": [], 
-            "generateOthersCategory": true, 
-            "isA": "dimension", 
-            "maxValues": 20, 
+            "column": "cluster_labels",
+            "type": "ALPHANUM",
             "numParams": {
               "emptyBinsMode": "ZEROS"
-            }, 
-            "possibleNewFilters": [
-              {
-                "group": "Measure values", 
-                "label": "Count of records", 
-                "measureFilterId": 0, 
-                "type": "MEASURE_VALUES"
-              }
-            ], 
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
             "possibleSorts": [
               {
-                "label": "Natural ordering", 
-                "sortAscending": true, 
-                "type": "NATURAL"
-              }, 
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
               {
-                "label": "Count of records, descending", 
-                "measureIdx": 0, 
-                "type": "AGGREGATION"
-              }, 
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
               {
-                "label": "Count of records, ascending", 
-                "measureIdx": 0, 
-                "sortAscending": true, 
-                "type": "AGGREGATION"
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
               }
-            ], 
+            ],
             "sort": {
-              "label": "Count of records, descending", 
-              "measureIdx": 0, 
-              "type": "AGGREGATION"
-            }, 
-            "type": "ALPHANUM"
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
           }
-        ], 
+        ],
+        "facetDimension": [],
+        "animationDimension": [],
         "genericMeasures": [
           {
-            "displayAxis": "axis1", 
-            "displayType": "column", 
-            "displayed": true, 
-            "function": "COUNT", 
-            "isA": "measure", 
-            "type": "NUMERICAL"
+            "function": "COUNT",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
           }
-        ], 
-        "includeZero": true, 
-        "name": "Churnability", 
-        "showLegend": true, 
-        "smoothing": false, 
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACL0lEQVRoQ+2Zu0sDMRzHk6sOCkW7CIqT0I52UkGKDwQLgop1cxEcdFME0b/BF+IgUl84iGN9UUGkiCCCuqijXR2kDg4tLlZP7nf9pbF3Phbv0jSZQkKbfH7f5PtLcpSUWKFC8caSujkffZBEArH/mJsC/o+o8v+5HFgCFSceJq3BllFhBczLXyoK3/k6YZkHN9dy+BKZlt2SlhqYwb2cMdPSL/ygME0dy6ewAiaELFy2g8JTTxulobB0wLxRpWeaQE3v7E3+4MHSEeaoIndpBSy7wrwzYwq6762H9Rs00pNsSzo93fwG+3buuhyBM4e+LLbJB8wZFQM+qgaFwbykU9gGGP2YhpJiA6PjfnuntblQ86kIFZYamJ2VQ0mK9UWtDpinWs/FVhgdlznsH55IeGA8VeHPFLBoj3i8wqgS5NKCclvV1k01z4nR3Hj0CL2GQRWNwmhWIwO7lkX85Vyc6+WBT+MfbL8KDcw7MlK+be8z4LGDV7OukwShpMuobu0NQdNw/07Yo2mgcLS/sviAO54PYdKollH/CXh8fSVMPBSAeUcWWmF+vzaMZgDY25Jf0ukrU81oX0WCUAoKYxBW+yrCGjWB2cU+4md7mG8T5qRVeEgA42HvToToNT2mGaXiCUJMYGybp7W2wBa4iN/9PGx9RbT4VEGDzoBZx3s2TDxloDArdnAiAP+GV8z9Yn1McyCSCtiBILs6hFLY1fA7MLhS2IEguzqEUtjV8Dsw+Cer36Q4iU7tqgAAAABJRU5ErkJggg==", 
-        "type": "stacked_columns", 
-        "userEditedName": true, 
-        "variant": "normal"
-      }, 
-      "refreshableSelection": {
-        "_refreshTrigger": 0, 
-        "autoRefreshSample": false, 
-        "selection": {
-          "maxRecords": 30000, 
-          "partitionSelectionMethod": "ALL", 
-          "samplingMethod": "HEAD_SEQUENTIAL", 
-          "targetRatio": 0.02
-        }
-      }
+        ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaSize": [],
+        "uaShape": [],
+        "uaColor": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [
+          {
+            "filterType": "ALPHANUM_FACET",
+            "column": "prediction",
+            "columnType": "ALPHANUM",
+            "isA": "filter",
+            "excludedValues": {},
+            "explicitExclude": false
+          }
+        ],
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "includeZero": true,
+        "smoothing": false,
+        "showLegend": true,
+        "showXAxis": false,
+        "showInChartValues": false,
+        "showInChartLabels": false,
+        "strokeWidth": 1,
+        "fillOpacity": 0.5,
+        "showXAxisLabel": false,
+        "showYAxisLabel": false,
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "chartHeight": 200,
+        "singleXAxis": false,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorOptions": {
+          "singleColor": "#659a88",
+          "transparency": 0.9,
+          "colorPalette": "dku_dss_next",
+          "ccScaleMode": "NORMAL",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 50.0
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.6,
+          "gridLatDeg": 0.6
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABdUlEQVRoQ2NkIAAuCTo+Q1ai936/FCE9g1mekZDjRj08GsOE0sjgkh9N0ujxMZqHh3se/lxuilIt8XaeHt7V0qiHR2N4cFU7hFxDsFoaTdLDPUn/P6KKUkoz2twe3qX0qIdHY5hQuTi45AmW0riS9FBtYxP08OTjdreR4yjX8pAqiD9sPdxzzB6llC6xOggupYdq/Uwwhkc9PBrDkBw+VLqNZCfpodogGfUwejMBV6E1GsNDpMk5mqQxWr7r7qA0PBiCVMANj2GbpBlweBhX3h5cXQVM18CT9BVRp3PI0jqv9xmB+cPVwzjbxsPVwziTKA4P44r5IZOkqeHhSwJOdxkY/3MO5gl0eB6mhof/H1G9y8DAgOLhwTboN+phWHKEdfRx5lUseRtXDKMXiPTqXWFrK1A1hnuO2WMkaVDAoVsM8jAoqeNqvFBrNAWvh0mJSZz187o7GB4Gt8zQUwPIAGzi0FYcLrfgCiBSxAm2pQd7NUOq+wC/Vko40Y2wNgAAAABJRU5ErkJggg\u003d\u003d",
+        "disableSafetyLimits": false,
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT"
+      },
+      "maxDataBytes": 157286400
     }
-  ], 
-  "script": {
-    "charts": [], 
-    "chartsEngine": "LINO", 
-    "explorationFilters": [], 
-    "explorationSampling": {
-      "_refreshTrigger": 0, 
-      "autoRefreshSample": false, 
-      "selection": {
-        "maxRecords": 30000, 
-        "partitionSelectionMethod": "ALL", 
-        "samplingMethod": "HEAD_SEQUENTIAL", 
-        "targetRatio": 0.02
-      }
-    }, 
-    "exploreUIParams": {}, 
-    "steps": [], 
-    "tags": [], 
-    "vizSampling": {
-      "_refreshTrigger": 0, 
-      "autoRefreshSample": false
-    }
-  }
+  ]
 }
