@@ -33,11 +33,11 @@
   "config": {},
   "name": "histogram",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620205345244
+    "lastModifiedOn": 1620205348742
   },
   "creationTag": {
     "versionNumber": 0,
