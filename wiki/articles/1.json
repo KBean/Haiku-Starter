@@ -1,23 +1,24 @@
 {
-    "layout": "WIKI_ARTICLE", 
-    "attachments": [], 
-    "versionTag": {
-        "lastModifiedBy": {
-            "login": "admin"
-        }, 
-        "lastModifiedOn": 1536329650322, 
-        "versionNumber": 3
-    }, 
-    "tags": [], 
-    "creationTag": {
-        "lastModifiedBy": {
-            "login": "admin"
-        }, 
-        "lastModifiedOn": 1536329547641, 
-        "versionNumber": 0
-    }, 
-    "checklists": {
-        "checklists": []
-    }, 
-    "name": "Predicting churn"
+  "name": "Predicting churn",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620250971817
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1536329547641
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
 }
