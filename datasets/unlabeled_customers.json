@@ -1,149 +1,292 @@
 {
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
   "flowOptions": {
-    "crossProjectBuildBehavior": "DEFAULT", 
-    "rebuildBehavior": "NORMAL"
-  }, 
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "formatParams": {
-    "arrayMapFormat": "json", 
-    "charset": "utf8", 
-    "compress": "", 
-    "dateSerializationFormat": "ISO", 
-    "escapeChar": "\\", 
+    "style": "excel",
+    "charset": "utf8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
     "hiveSeparators": [
-      "\u0002", 
-      "\u0003", 
-      "\u0004", 
-      "\u0005", 
-      "\u0006", 
-      "\u0007", 
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
       "\b"
-    ], 
-    "normalizeDoubles": false, 
-    "parseHeaderRow": true, 
-    "probableNumberOfRecords": 20, 
-    "quoteChar": "\"", 
-    "separator": ",", 
-    "skipRowsAfterHeader": 0, 
-    "skipRowsBeforeHeader": 0, 
-    "style": "excel"
-  }, 
-  "formatType": "csv", 
-  "managed": false, 
-  "metrics": {
-    "probes": []
-  }, 
-  "params": {}, 
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 20,
+    "normalizeBooleans": false,
+    "normalizeDoubles": false,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
   "partitioning": {
-    "dimensions": [], 
-    "ignoreNonMatchingFile": false
-  }, 
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620252287613
+  },
+  "tags": [
+    "creator_admin"
+  ],
+  "params": {
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
   "schema": {
     "columns": [
       {
-        "maxLength": -1, 
-        "name": "State", 
+        "name": "State",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Account Length", 
+        "name": "Account Length",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Area Code", 
+        "name": "Area Code",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Phone", 
+        "name": "Phone",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Int'l Plan", 
+        "name": "Int\u0027l Plan",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "VMail Plan", 
+        "name": "VMail Plan",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "VMail Message", 
+        "name": "VMail Message",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Day Mins", 
+        "name": "Day Mins",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Day Calls", 
+        "name": "Day Calls",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Day Charge", 
+        "name": "Day Charge",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Eve Mins", 
+        "name": "Eve Mins",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Eve Calls", 
+        "name": "Eve Calls",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Eve Charge", 
+        "name": "Eve Charge",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Night Mins", 
+        "name": "Night Mins",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Night Calls", 
+        "name": "Night Calls",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Night Charge", 
+        "name": "Night Charge",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Intl Mins", 
+        "name": "Intl Mins",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Intl Calls", 
+        "name": "Intl Calls",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "Intl Charge", 
+        "name": "Intl Charge",
         "type": "string"
-      }, 
+      },
       {
-        "maxLength": -1, 
-        "name": "CustServ Calls", 
+        "name": "CustServ Calls",
         "type": "string"
       }
-    ], 
-    "userModified": false
-  }, 
-  "tags": [
-    "creator_admin"
-  ], 
-  "type": "UploadedFiles"
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "partition": "NP",
+      "columns": [],
+      "metrics": []
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "partition": "NP",
+      "checks": []
+    }
+  },
+  "customFields": {}
 }
