@@ -66,6 +66,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "NONE",
         "name": "State",
         "role": "INPUT",
@@ -83,6 +84,7 @@
             "max_nb_categories": 100,
             "max_cat_safety": 200,
             "nb_bins_hashing": 1048576,
+            "hash_whole_categories": true,
             "dummy_drop": "NONE",
             "name": "State",
             "role": "INPUT",
@@ -239,6 +241,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "NONE",
         "name": "Phone",
         "role": "REJECT",
@@ -319,28 +322,6 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "Day_Charge": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
-        "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
-        "name": "Day_Charge",
-        "role": "INPUT",
-        "type": "NUMERIC",
-        "state": {
-          "userModified": false,
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "DoubleMeaning"
-        },
-        "customHandlingCode": "",
-        "customProcessorWantsMatrix": false,
-        "sendToInput": "main"
-      },
       "Intl_Plan": {
         "category_handling": "DUMMIFY",
         "missing_handling": "IMPUTE",
@@ -351,6 +332,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "NONE",
         "name": "Intl_Plan",
         "role": "INPUT",
@@ -409,20 +391,23 @@
         "sendToInput": "main"
       },
       "Area_Code": {
-        "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "impute_constant_value": "0",
+        "category_handling": "DUMMIFY",
         "missing_handling": "IMPUTE",
-        "missing_impute_with": "MEAN",
-        "impute_constant_value": 0.0,
-        "rescaling": "AVGSTD",
-        "quantile_bin_nb_bins": 4,
-        "binarize_threshold_mode": "MEDIAN",
-        "binarize_constant_threshold": 0.0,
+        "missing_impute_with": "MODE",
+        "dummy_clip": "CUMULATIVE_PROPORTION",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": true,
+        "dummy_drop": "AUTO",
         "name": "Area_Code",
         "role": "INPUT",
-        "type": "NUMERIC",
+        "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning"
         },
@@ -462,6 +447,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "NONE",
         "name": "VMail_Plan",
         "role": "INPUT",
@@ -470,6 +456,28 @@
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Boolean"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
+      },
+      "Night_Charge": {
+        "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
+        "impute_constant_value": 0.0,
+        "rescaling": "AVGSTD",
+        "quantile_bin_nb_bins": 4,
+        "binarize_threshold_mode": "MEDIAN",
+        "binarize_constant_threshold": 0.0,
+        "name": "Night_Charge",
+        "role": "INPUT",
+        "type": "NUMERIC",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
@@ -507,6 +515,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
+        "hash_whole_categories": false,
         "dummy_drop": "NONE",
         "name": "Churn",
         "role": "PROFILING",
@@ -524,6 +533,7 @@
             "max_nb_categories": 100,
             "max_cat_safety": 200,
             "nb_bins_hashing": 1048576,
+            "hash_whole_categories": true,
             "dummy_drop": "AUTO",
             "role": "INPUT",
             "type": "CATEGORY",
@@ -537,7 +547,7 @@
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
       },
-      "Night_Charge": {
+      "Day_Charge": {
         "generate_derivative": false,
         "numerical_handling": "REGULAR",
         "missing_handling": "IMPUTE",
@@ -547,7 +557,7 @@
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
-        "name": "Night_Charge",
+        "name": "Day_Charge",
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
@@ -714,6 +724,39 @@
   },
   "id": "IRL6lq6i",
   "initiator": "admin",
+  "diagnosticsSettings": {
+    "enabled": true,
+    "settings": [
+      {
+        "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_RUNTIME",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+        "enabled": true
+      }
+    ]
+  },
   "taskType": "CLUSTERING",
   "name": "Cluster data",
   "backendType": "PY_MEMORY",
@@ -806,14 +849,14 @@
             "isA": "dimension",
             "possibleSorts": [
               {
-                "sortAscending": true,
+                "label": "Natural ordering",
                 "type": "NATURAL",
-                "label": "Natural ordering"
+                "sortAscending": true
               },
               {
-                "label": "Average of Total_Charge, descending",
+                "measureIdx": 0,
                 "type": "AGGREGATION",
-                "measureIdx": 0
+                "label": "Average of Total_Charge, descending"
               },
               {
                 "label": "Average of Total_Charge, ascending",
@@ -823,9 +866,9 @@
               }
             ],
             "sort": {
-              "sortAscending": true,
+              "label": "Natural ordering",
               "type": "NATURAL",
-              "label": "Natural ordering"
+              "sortAscending": true
             }
           }
         ],
@@ -1057,14 +1100,14 @@
             "isA": "dimension",
             "possibleSorts": [
               {
-                "sortAscending": true,
+                "label": "Natural ordering",
                 "type": "NATURAL",
-                "label": "Natural ordering"
+                "sortAscending": true
               },
               {
-                "measureIdx": 0,
+                "label": "Average of Day_Charge, descending",
                 "type": "AGGREGATION",
-                "label": "Average of Day_Charge, descending"
+                "measureIdx": 0
               },
               {
                 "measureIdx": 0,
@@ -1073,9 +1116,9 @@
                 "label": "Average of Day_Charge, ascending"
               },
               {
-                "measureIdx": 1,
+                "label": "Average of Eve_Charge, descending",
                 "type": "AGGREGATION",
-                "label": "Average of Eve_Charge, descending"
+                "measureIdx": 1
               },
               {
                 "measureIdx": 1,
@@ -1084,9 +1127,9 @@
                 "label": "Average of Eve_Charge, ascending"
               },
               {
-                "measureIdx": 2,
+                "label": "Average of Night_Charge, descending",
                 "type": "AGGREGATION",
-                "label": "Average of Night_Charge, descending"
+                "measureIdx": 2
               },
               {
                 "measureIdx": 2,
@@ -1096,9 +1139,9 @@
               }
             ],
             "sort": {
-              "sortAscending": true,
+              "label": "Natural ordering",
               "type": "NATURAL",
-              "label": "Natural ordering"
+              "sortAscending": true
             }
           }
         ],
@@ -1240,5 +1283,6 @@
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     }
-  }
+  },
+  "labels": []
 }
