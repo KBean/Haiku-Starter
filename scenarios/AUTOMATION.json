@@ -5,11 +5,11 @@
   "name": "automation",
   "active": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620206147458
+    "lastModifiedOn": 1620250622343
   },
   "checklists": {
     "checklists": []
@@ -41,7 +41,28 @@
       }
     }
   ],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "mail",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "hXk1Duyp",
+      "name": "Email",
+      "runConditionEnabled": false,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
