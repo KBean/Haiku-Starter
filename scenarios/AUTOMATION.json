@@ -5,11 +5,11 @@
   "name": "automation",
   "active": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620250622343
+    "lastModifiedOn": 1620250652293
   },
   "checklists": {
     "checklists": []
@@ -49,6 +49,8 @@
         "configuration": {
           "channelId": "mail",
           "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "sender": "jb.nam@mail.com",
+          "recipient": "judy.nam@dataiku.com",
           "sendAsHTML": false,
           "attachments": [],
           "messageSource": "TEMPLATE_FILE",
