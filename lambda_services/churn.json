@@ -1,4 +1,5 @@
 {
+  "name": "churn",
   "endpoints": [
     {
       "modelRef": "5HExUjQ1",
