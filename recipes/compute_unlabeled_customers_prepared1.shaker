@@ -17,7 +17,7 @@
       },
       "withinFirstN": -1,
       "partitionSelectionMethod": "ALL",
-      "maxStoredBytes": -1,
+      "maxStoredBytes": 104857600,
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
       "samplingMethod": "HEAD_SEQUENTIAL",
@@ -26,8 +26,43 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "Phone",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "-",
+        "outColPrefix": "Phone_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +70,30 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Eve Calls": 100,
+    "Area Code": 100,
+    "Night Mins": 120,
+    "Phone_0": 100,
+    "Intl Calls": 100,
+    "Account Length": 120,
+    "VMail Plan": 100,
+    "Day Mins": 106,
+    "Intl Mins": 113,
+    "Night Charge": 134,
+    "Eve Charge": 120,
+    "Night Calls": 100,
+    "State": 100,
+    "Phone": 100,
+    "VMail Message": 113,
+    "CustServ Calls": 120,
+    "Day Charge": 120,
+    "Phone_1": 100,
+    "Day Calls": 100,
+    "Eve Mins": 106,
+    "Int\u0027l Plan": 100,
+    "Intl Charge": 127
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
