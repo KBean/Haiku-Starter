@@ -62,7 +62,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "bc_confusion"
+              "displayMode": "bc_confusion",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -97,7 +98,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "variables_importance"
+              "displayMode": "variables_importance",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -117,7 +119,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "ensemble_summary"
+              "displayMode": "ensemble_summary",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "NO",
@@ -252,8 +255,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 21,
+              "left": 0,
               "width": 2,
               "height": 2
             },
@@ -283,11 +286,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 107,
+    "versionNumber": 108,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608695489094
+    "lastModifiedOn": 1623381130651
   },
   "creationTag": {
     "versionNumber": 0,
