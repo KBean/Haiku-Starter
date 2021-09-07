@@ -1,5 +1,13 @@
 {
-  "endpoints": [],
+  "name": "enrichment",
+  "endpoints": [
+    {
+      "testQueries": [],
+      "lookups": [],
+      "id": "enrichment",
+      "type": "DATASETS_LOOKUP"
+    }
+  ],
   "publicAccess": true,
   "authRealm": {
     "queryKeys": []
