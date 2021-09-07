@@ -116,7 +116,7 @@
         "colorOptions": {
           "singleColor": "#2678B1",
           "transparency": 0.8,
-          "colorPalette": "dku_tritanopia1",
+          "colorPalette": "dku_dss_next",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -145,7 +145,7 @@
           "identityLine": false
         },
         "mapOptions": {
-          "tilesLayer": "cartodb-positron",
+          "tilesLayer": "mapbox.mapbox-streets-v8",
           "lockSquareGrid": false
         },
         "mapGridOptions": {
