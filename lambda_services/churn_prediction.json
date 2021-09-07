@@ -1,4 +1,5 @@
 {
+  "name": "churn_prediction",
   "endpoints": [
     {
       "modelRef": "5HExUjQ1",
