@@ -37,6 +37,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
+        "expression": "\"USA\"",
         "column": "country"
       },
       "alwaysShowComment": false
@@ -52,6 +53,7 @@
   "columnWidthsByName": {
     "Night_Charge": 105,
     "Intl_Mins": 100,
+    "country": 100,
     "Day_Mins": 100,
     "Area_Code": 100,
     "Account_Length": 120,
