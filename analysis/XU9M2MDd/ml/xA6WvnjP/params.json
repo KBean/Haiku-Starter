@@ -257,7 +257,7 @@
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -563,7 +563,8 @@
     },
     "kmeans_clustering": {
       "k": [
-        5
+        5,
+        6
       ],
       "enabled": true,
       "seed": 1337,
