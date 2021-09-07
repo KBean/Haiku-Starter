@@ -1,4 +1,5 @@
 {
+  "name": "churn_test",
   "endpoints": [
     {
       "modelRef": "fPgaSDID",
