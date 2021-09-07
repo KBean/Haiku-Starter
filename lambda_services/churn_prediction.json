@@ -2,7 +2,7 @@
   "name": "churn_prediction",
   "endpoints": [
     {
-      "modelRef": "5HExUjQ1",
+      "modelRef": "fPgaSDID",
       "useJava": true,
       "outputExplanations": false,
       "individualExplanationParams": {
