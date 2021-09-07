@@ -2,7 +2,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Churn prediction model ( RANDOM_FOREST)",
-  "activeVersion": "1631052213370",
+  "activeVersion": "1631055481844",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -1782,11 +1782,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631052213510
+    "lastModifiedOn": 1631055482284
   },
   "tags": [],
   "customFields": {},
