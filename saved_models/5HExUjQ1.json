@@ -2,7 +2,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Churn prediction model ( RANDOM_FOREST)",
-  "activeVersion": "1608691982768",
+  "activeVersion": "1631052213370",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -14,7 +14,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_CHURN_10-xuyNiSIg-dmZzhdCR-s2-pp1-m1",
+  "lastExportedFrom": "A-DKU_CHURN_10-xuyNiSIg-dmZzhdCR-s3-pp4-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -111,8 +111,8 @@
             8
           ],
           "range": {
-            "min": 5,
-            "max": 10,
+            "min": 10,
+            "max": 20,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -124,7 +124,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -197,8 +197,8 @@
             8
           ],
           "range": {
-            "min": 5,
-            "max": 10,
+            "min": 6,
+            "max": 20,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -210,7 +210,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -283,8 +283,8 @@
             8
           ],
           "range": {
-            "min": 5,
-            "max": 10,
+            "min": 6,
+            "max": 20,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -296,7 +296,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -369,7 +369,7 @@
           ],
           "range": {
             "min": 3,
-            "max": 8,
+            "max": 10,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -381,7 +381,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -481,7 +481,7 @@
           ],
           "range": {
             "min": 3,
-            "max": 8,
+            "max": 10,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -493,7 +493,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -592,7 +592,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -647,7 +647,7 @@
             "min": 1
           },
           "values": [
-            3
+            1
           ],
           "range": {
             "min": 1,
@@ -1084,8 +1084,8 @@
             3
           ],
           "range": {
-            "min": 2,
-            "max": 5,
+            "min": 3,
+            "max": 10,
             "nbValues": 3,
             "scaling": "LINEAR"
           }
@@ -1234,7 +1234,7 @@
             1.0
           ],
           "range": {
-            "min": 0.5,
+            "min": 0.01,
             "max": 1.0,
             "nbValues": 3,
             "scaling": "LINEAR"
@@ -1624,7 +1624,7 @@
         "mode": "KFOLD",
         "splitRatio": 0.8,
         "shuffleIterations": 1,
-        "nFolds": 3,
+        "nFolds": 5,
         "stratified": true,
         "strategy": "GRID",
         "bayesianOptimizer": "SCIKIT_OPTIMIZE",
@@ -1633,7 +1633,9 @@
         "nIter": 0,
         "nIterRandom": 10,
         "timeout": 0,
-        "nJobs": 4
+        "nJobs": 4,
+        "distributed": false,
+        "nContainers": 4
       },
       "metrics": {
         "evaluationMetric": "ROC_AUC",
@@ -1650,6 +1652,42 @@
       },
       "custom_mllib": [],
       "max_ensemble_nodes_serialized": 6000
+    },
+    "assertionsParams": {
+      "assertions": []
+    },
+    "diagnosticsSettings": {
+      "enabled": true,
+      "settings": [
+        {
+          "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_RUNTIME",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+          "enabled": true
+        }
+      ]
     },
     "taskType": "PREDICTION",
     "backendType": "PY_MEMORY",
@@ -1740,14 +1778,15 @@
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       }
-    }
+    },
+    "labels": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608691982835
+    "lastModifiedOn": 1631052213510
   },
   "tags": [],
   "customFields": {},
