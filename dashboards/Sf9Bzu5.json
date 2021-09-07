@@ -62,7 +62,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "variables_importance"
+              "displayMode": "variables_importance",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -82,7 +83,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "heatmap"
+              "displayMode": "heatmap",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -146,7 +148,8 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "cluster-profiling"
+              "displayMode": "cluster-profiling",
+              "advancedOptions": {}
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -182,11 +185,11 @@
   "name": "Segments Analysis",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 52,
+    "versionNumber": 53,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1611284097938
+    "lastModifiedOn": 1631026969813
   },
   "creationTag": {
     "versionNumber": 0,
