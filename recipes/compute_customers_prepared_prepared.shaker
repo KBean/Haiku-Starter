@@ -37,8 +37,8 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "\"US\"",
-        "column": "country"
+        "expression": "\"US, \"+ State",
+        "column": "US_STATE"
       },
       "alwaysShowComment": false
     }
@@ -57,22 +57,23 @@
     "Day_Mins": 100,
     "Area_Code": 100,
     "Account_Length": 120,
+    "Intl_Plan": 100,
+    "Night_Mins": 100,
+    "Intl_Calls": 100,
+    "CustServ_Calls": 120,
+    "Phone": 100,
+    "VMail_Message": 113,
+    "Total_Charge": 141,
     "Intl_Charge": 100,
     "Eve_Mins": 100,
     "Eve_Calls": 100,
     "Eve_Charge": 100,
-    "Intl_Plan": 100,
-    "Night_Mins": 100,
     "Churn": 100,
-    "Intl_Calls": 100,
+    "US_STATE": 100,
     "Night_Calls": 100,
-    "CustServ_Calls": 120,
     "State": 100,
-    "Phone": 100,
     "VMail_Plan": 100,
-    "VMail_Message": 113,
     "Day_Calls": 100,
-    "Total_Charge": 141,
     "Day_Charge": 100,
     "total_Mins": 141
   },
