@@ -17,6 +17,14 @@
     {
       "objectId": "geocoded",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "geocoded_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_geocoded_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
