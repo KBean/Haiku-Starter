@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631053738619
+    "lastModifiedOn": 1631054209903
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,6 +60,10 @@
     "columns": [
       {
         "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "US_STATE",
         "type": "string"
       },
       {
@@ -149,10 +153,6 @@
       {
         "name": "Churn",
         "type": "boolean"
-      },
-      {
-        "name": "country",
-        "type": "string"
       }
     ],
     "userModified": true
