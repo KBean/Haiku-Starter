@@ -9,7 +9,7 @@
       "batch_size_bing": 50,
       "batch_size_uscensus": 1000,
       "column_prefix": "",
-      "address_column": "country,State",
+      "address_column": "country State",
       "provider": "osm"
     },
     "containerSelection": {
@@ -45,11 +45,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631053808711
+    "lastModifiedOn": 1631053936247
   },
   "creationTag": {
     "versionNumber": 0,
