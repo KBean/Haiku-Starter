@@ -191,7 +191,7 @@
             "box": {
               "top": 8,
               "left": 4,
-              "width": 7,
+              "width": 8,
               "height": 1
             },
             "clickAction": "DO_NOTHING",
@@ -228,52 +228,6 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "ORIG_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 20,
-              "left": 4,
-              "width": 8,
-              "height": 3
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "U0wv3xR",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 21,
-              "left": 0,
-              "width": 2,
-              "height": 2
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "4dHgNal",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -286,11 +240,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 109,
+    "versionNumber": 110,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631026886197
+    "lastModifiedOn": 1631026915507
   },
   "creationTag": {
     "versionNumber": 0,
