@@ -10,7 +10,7 @@
       "batch_size_uscensus": 1000,
       "column_prefix": "",
       "address_column": "State",
-      "provider": "mapbox"
+      "provider": "osm"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -45,11 +45,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631053285724
+    "lastModifiedOn": 1631053338211
   },
   "creationTag": {
     "versionNumber": 0,
