@@ -1,7 +1,24 @@
 {
   "name": "geospatial",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_customers_prepared_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "customers_prepared_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_geocoded",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "geocoded",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
