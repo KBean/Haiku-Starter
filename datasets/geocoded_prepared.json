@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631053487870
+    "lastModifiedOn": 1631053514950
   },
   "creationTag": {
     "versionNumber": 0,
@@ -157,6 +157,10 @@
       {
         "name": "Churn",
         "type": "boolean"
+      },
+      {
+        "name": "geopoint",
+        "type": "string"
       }
     ],
     "userModified": true
