@@ -37,7 +37,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "\"USA\"",
+        "expression": "\"US\"",
         "column": "country"
       },
       "alwaysShowComment": false
