@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 6
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -37,11 +37,11 @@
   "name": "Churn by State",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631055051393
+    "lastModifiedOn": 1631055058069
   },
   "creationTag": {
     "versionNumber": 0,
