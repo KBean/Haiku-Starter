@@ -12,8 +12,49 @@
         "shapleyBackgroundSize": 100,
         "subChunkSize": 5000
       },
-      "testQueries": [],
-      "enrichMapping": [],
+      "testQueries": [
+        {
+          "name": "customers_prepared #1",
+          "q": {
+            "features": {
+              "State": "KS",
+              "Account_Length": 128,
+              "Area_Code": 415,
+              "Phone": "382-4657",
+              "Intl_Plan": false,
+              "VMail_Plan": true,
+              "VMail_Message": 25,
+              "Day_Mins": 265.1,
+              "Day_Calls": 110,
+              "Day_Charge": 45.07,
+              "Eve_Mins": 197.4,
+              "Eve_Calls": 99,
+              "Eve_Charge": 16.78,
+              "Night_Mins": 244.7,
+              "Night_Calls": 91,
+              "Night_Charge": 11.01,
+              "Intl_Mins": 10,
+              "total_Mins": 717.2,
+              "Intl_Calls": 3,
+              "Intl_Charge": 2.7,
+              "Total_Charge": 75.56,
+              "CustServ_Calls": 1,
+              "Churn": false
+            }
+          }
+        }
+      ],
+      "enrichMapping": [
+        {
+          "datasetRef": "customers_prepared",
+          "packagingType": "BUNDLED_TOCONNECTION",
+          "on": [],
+          "missingLookupKeyBehavior": "IGNORE",
+          "notFoundBehavior": "IGNORE",
+          "multiMatchBehavior": "KEEP_FIRST",
+          "columnsMapping": {}
+        }
+      ],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
       "auditPostEnrichData": false,
