@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631053317806
+    "lastModifiedOn": 1631053415006
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,11 +64,11 @@
       },
       {
         "name": "latitude",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "longitude",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Account_Length",
