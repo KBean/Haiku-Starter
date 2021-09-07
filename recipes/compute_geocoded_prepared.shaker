@@ -26,8 +26,24 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +51,34 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Night_Charge": 105,
+    "Intl_Mins": 100,
+    "Day_Mins": 100,
+    "Area_Code": 100,
+    "Account_Length": 120,
+    "latitude": 106,
+    "Intl_Plan": 100,
+    "Night_Mins": 100,
+    "Intl_Calls": 100,
+    "CustServ_Calls": 120,
+    "Phone": 100,
+    "VMail_Message": 113,
+    "Total_Charge": 106,
+    "longitude": 148,
+    "Intl_Charge": 100,
+    "Eve_Mins": 100,
+    "Eve_Calls": 100,
+    "Eve_Charge": 100,
+    "geopoint": 281,
+    "Churn": 100,
+    "Night_Calls": 100,
+    "State": 100,
+    "VMail_Plan": 100,
+    "Day_Calls": 100,
+    "Day_Charge": 100,
+    "total_Mins": 141
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
