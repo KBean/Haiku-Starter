@@ -110,26 +110,6 @@
             "resizeImageMode": "ORIG_SIZE"
           },
           {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 9,
-              "left": 4,
-              "width": 8,
-              "height": 11
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "ensemble_summary",
-              "advancedOptions": {}
-            },
-            "autoLoad": true,
-            "showTitle": "NO",
-            "insightId": "reHKbCg",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "ORIG_SIZE"
-          },
-          {
             "tileType": "TEXT",
             "box": {
               "top": 0,
@@ -187,25 +167,6 @@
             "resizeImageMode": "ORIG_SIZE"
           },
           {
-            "tileType": "TEXT",
-            "box": {
-              "top": 8,
-              "left": 4,
-              "width": 8,
-              "height": 1
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "text": "__Visualize the trees of the Random Forest__\n\nClick on the tree node to (un)fold\n\n▼▼▼▼▼",
-              "textAlign": "CENTER",
-              "isTransparent": true
-            },
-            "autoLoad": true,
-            "showTitle": "NO",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "ORIG_SIZE"
-          },
-          {
             "tileType": "INSIGHT",
             "box": {
               "top": 5,
@@ -240,11 +201,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 114,
+    "versionNumber": 115,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631052990418
+    "lastModifiedOn": 1631053018334
   },
   "creationTag": {
     "versionNumber": 0,
