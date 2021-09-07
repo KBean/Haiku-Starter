@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "jnam"
+      "login": "admin"
     },
-    "lastModifiedOn": 1608652517779
+    "lastModifiedOn": 1631052108069
   },
   "tags": [
     "creator_admin"
@@ -67,11 +67,11 @@
       },
       {
         "name": "Account_Length",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Area_Code",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Phone",
@@ -87,7 +87,7 @@
       },
       {
         "name": "VMail_Message",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Day_Mins",
@@ -95,7 +95,7 @@
       },
       {
         "name": "Day_Calls",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Day_Charge",
@@ -107,7 +107,7 @@
       },
       {
         "name": "Eve_Calls",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Eve_Charge",
@@ -119,7 +119,7 @@
       },
       {
         "name": "Night_Calls",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Night_Charge",
@@ -135,7 +135,7 @@
       },
       {
         "name": "Intl_Calls",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Intl_Charge",
@@ -147,7 +147,7 @@
       },
       {
         "name": "CustServ_Calls",
-        "type": "double"
+        "type": "bigint"
       },
       {
         "name": "Churn",
@@ -160,6 +160,7 @@
     ],
     "userModified": true
   },
+  "dkuProperties": [],
   "metrics": {
     "probes": []
   },
