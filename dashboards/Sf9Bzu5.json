@@ -33,7 +33,7 @@
             "box": {
               "top": 4,
               "left": 0,
-              "width": 4,
+              "width": 6,
               "height": 3
             },
             "clickAction": "DO_NOTHING",
@@ -158,21 +158,6 @@
             "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "ORIG_SIZE"
-          },
-          {
-            "tileType": "IMAGE",
-            "box": {
-              "top": 4,
-              "left": 4,
-              "width": 2,
-              "height": 3
-            },
-            "clickAction": "DO_NOTHING",
-            "autoLoad": true,
-            "showTitle": "MOUSEOVER",
-            "displayMode": "IMAGE",
-            "imageId": "0iJ9Gfz",
-            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -185,11 +170,11 @@
   "name": "Segments Analysis",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 53,
+    "versionNumber": 54,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631026969813
+    "lastModifiedOn": 1631026976586
   },
   "creationTag": {
     "versionNumber": 0,
