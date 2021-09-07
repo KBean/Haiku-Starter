@@ -121,7 +121,7 @@
         "identityLine": false
       },
       "mapOptions": {
-        "tilesLayer": "mapbox.mapbox-streets-v7",
+        "tilesLayer": "mapbox.satellite",
         "lockSquareGrid": false
       },
       "mapGridOptions": {
@@ -139,11 +139,11 @@
   "name": "Churn by state on geocoded_prepared",
   "dashboardCreationId": "b9mHPgR",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631055077822
+    "lastModifiedOn": 1631055084872
   },
   "creationTag": {
     "versionNumber": 0,
