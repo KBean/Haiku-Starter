@@ -182,6 +182,39 @@
       "custom_python": [],
       "custom_mllib": []
     },
+    "diagnosticsSettings": {
+      "enabled": true,
+      "settings": [
+        {
+          "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_RUNTIME",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+          "enabled": true
+        }
+      ]
+    },
     "taskType": "CLUSTERING",
     "backendType": "PY_MEMORY",
     "maxConcurrentModelTraining": 2,
@@ -271,15 +304,17 @@
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       }
-    }
+    },
+    "labels": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1608691812623
+    "lastModifiedOn": 1631051684113
   },
+  "shortDesc": "Customer Segmentation of which customers belong to 5 different types of segmentation.",
   "tags": [],
   "customFields": {},
   "checklists": {
