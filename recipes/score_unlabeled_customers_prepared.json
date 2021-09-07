@@ -2,11 +2,18 @@
   "type": "clustering_scoring",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
-  "params": {},
+  "params": {
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
   "customMeta": {
     "kv": {}
   },
   "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
   "inputs": {
     "model": {
       "items": [
@@ -35,14 +42,16 @@
       ]
     }
   },
+  "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1511270539215
+    "lastModifiedOn": 1631051930636
   },
   "tags": [],
+  "customFields": {},
   "checklists": {
     "checklists": []
   }
