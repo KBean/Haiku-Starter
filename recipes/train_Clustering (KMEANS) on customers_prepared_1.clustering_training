@@ -2,18 +2,46 @@
   "envSelection": {
     "envMode": "USE_BUILTIN_MODE"
   },
+  "diagnosticsSettings": {
+    "settings": [
+      {
+        "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_RUNTIME",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+        "enabled": true
+      },
+      {
+        "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+        "enabled": true
+      }
+    ],
+    "enabled": true
+  },
   "modeling": {
     "max_iterations": 0,
-    "epsilon": 0.0,
     "ts_kmeans_k": 0,
     "coef0": 0.0,
-    "n_jobs": 2,
-    "min_sample_ratio": 0.0,
-    "k": 8,
-    "metrics": {
-      "customEvaluationMetricGIB": true,
-      "evaluationMetric": "SILHOUETTE"
-    },
+    "seed": 1337,
+    "n_jobs": 1,
+    "k": 5,
     "isolation_forest": {
       "max_samples": 0.5,
       "max_features": 1.0,
@@ -27,11 +55,17 @@
       "enabled": false,
       "contamination": 0.05
     },
+    "epsilon": 0.0,
+    "min_sample_ratio": 0.0,
+    "metrics": {
+      "customEvaluationMetricGIB": true,
+      "evaluationMetric": "SILHOUETTE"
+    },
     "gamma": 0.0,
     "custom_has_k": false,
     "algorithm": "KMEANS"
   },
-  "generatingModelId": "A-DKU_CHURN_10-To45m4yi-IRL6lq6i-s14-pp1-m3",
+  "generatingModelId": "A-DKU_CHURN_10-XU9M2MDd-xA6WvnjP-s1-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -52,7 +86,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Night_Charge",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -74,7 +107,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Intl_Mins",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -96,7 +128,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Day_Mins",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -118,7 +149,27 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Area_Code",
+        "state": {
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "LongMeaning",
+          "userModified": false
+        },
+        "impute_constant_value": 0.0
+      },
+      "Account_Length": {
+        "rescaling": "AVGSTD",
+        "missing_impute_with": "MEAN",
+        "role": "INPUT",
+        "sendToInput": "main",
+        "customHandlingCode": "",
+        "binarize_constant_threshold": 0.0,
+        "type": "NUMERIC",
+        "binarize_threshold_mode": "MEDIAN",
+        "customProcessorWantsMatrix": false,
+        "quantile_bin_nb_bins": 4,
+        "generate_derivative": false,
+        "missing_handling": "IMPUTE",
+        "numerical_handling": "REGULAR",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -140,32 +191,9 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Intl_Charge",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
-          "userModified": true
-        },
-        "impute_constant_value": 0.0
-      },
-      "Account_Length": {
-        "rescaling": "AVGSTD",
-        "missing_impute_with": "MEAN",
-        "role": "INPUT",
-        "sendToInput": "main",
-        "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
-        "type": "NUMERIC",
-        "binarize_threshold_mode": "MEDIAN",
-        "customProcessorWantsMatrix": false,
-        "quantile_bin_nb_bins": 4,
-        "generate_derivative": false,
-        "missing_handling": "IMPUTE",
-        "numerical_handling": "REGULAR",
-        "name": "Account_Length",
-        "state": {
-          "autoModifiedByDSS": false,
-          "recordedMeaning": "LongMeaning",
           "userModified": false
         },
         "impute_constant_value": 0.0
@@ -184,7 +212,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Eve_Mins",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -206,7 +233,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Eve_Calls",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -228,7 +254,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Eve_Charge",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -248,14 +273,14 @@
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
-        "missing_handling": "IMPUTE",
+        "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
-        "name": "Intl_Plan",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "Boolean",
           "userModified": false
         },
+        "hash_whole_categories": true,
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
@@ -273,7 +298,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Night_Mins",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -285,7 +309,7 @@
         "nb_bins_hashing": 1048576,
         "min_samples": 10,
         "missing_impute_with": "MODE",
-        "role": "PROFILING",
+        "role": "REJECT",
         "dummy_drop": "NONE",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
@@ -293,31 +317,14 @@
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
-        "missing_handling": "IMPUTE",
+        "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
-        "name": "Churn",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "Boolean",
-          "dssWantsToSet": {
-            "nb_bins_hashing": 1048576,
-            "min_samples": 10,
-            "missing_impute_with": "MODE",
-            "role": "INPUT",
-            "dummy_drop": "AUTO",
-            "dummy_clip": "MAX_NB_CATEGORIES",
-            "cumulative_proportion": 0.95,
-            "sendToInput": "main",
-            "customHandlingCode": "",
-            "type": "CATEGORY",
-            "customProcessorWantsMatrix": false,
-            "missing_handling": "NONE",
-            "category_handling": "DUMMIFY",
-            "max_nb_categories": 100,
-            "max_cat_safety": 200
-          },
-          "userModified": true
+          "userModified": false
         },
+        "hash_whole_categories": true,
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
@@ -335,7 +342,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Intl_Calls",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -357,7 +363,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Night_Calls",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -379,7 +384,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "CustServ_Calls",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -401,30 +405,12 @@
         "customProcessorWantsMatrix": false,
         "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
-        "name": "State",
         "state": {
-          "autoModifiedByDSS": true,
+          "autoModifiedByDSS": false,
           "recordedMeaning": "USStateMeaning",
-          "previousSettings": {
-            "nb_bins_hashing": 1048576,
-            "min_samples": 10,
-            "missing_impute_with": "MODE",
-            "role": "INPUT",
-            "dummy_drop": "NONE",
-            "dummy_clip": "MAX_NB_CATEGORIES",
-            "cumulative_proportion": 0.95,
-            "sendToInput": "main",
-            "customHandlingCode": "",
-            "type": "CATEGORY",
-            "customProcessorWantsMatrix": false,
-            "missing_handling": "IMPUTE",
-            "category_handling": "DUMMIFY",
-            "name": "State",
-            "max_nb_categories": 100,
-            "max_cat_safety": 200
-          },
           "userModified": false
         },
+        "hash_whole_categories": true,
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
@@ -441,14 +427,14 @@
         "type": "CATEGORY",
         "autoReason": "REJECT_IDENTIFIER",
         "customProcessorWantsMatrix": false,
-        "missing_handling": "IMPUTE",
+        "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
-        "name": "Phone",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text",
           "userModified": false
         },
+        "hash_whole_categories": true,
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
@@ -464,14 +450,14 @@
         "customHandlingCode": "",
         "type": "CATEGORY",
         "customProcessorWantsMatrix": false,
-        "missing_handling": "IMPUTE",
+        "missing_handling": "NONE",
         "category_handling": "DUMMIFY",
-        "name": "VMail_Plan",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "Boolean",
           "userModified": false
         },
+        "hash_whole_categories": true,
         "max_nb_categories": 100,
         "max_cat_safety": 200
       },
@@ -489,7 +475,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "VMail_Message",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -511,7 +496,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Day_Calls",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
@@ -533,7 +517,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Total_Charge",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -555,7 +538,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "Day_Charge",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -577,7 +559,6 @@
         "generate_derivative": false,
         "missing_handling": "IMPUTE",
         "numerical_handling": "REGULAR",
-        "name": "total_Mins",
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
@@ -781,7 +762,7 @@
           "enabled": false
         },
         "latestPartitionsN": 1,
-        "maxRecords": 30000,
+        "maxRecords": 10000,
         "ordering": {
           "rules": [],
           "enabled": false

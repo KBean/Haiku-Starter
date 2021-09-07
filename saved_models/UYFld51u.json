@@ -2,7 +2,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Segments model (KMEANS)",
-  "activeVersion": "1608691812527",
+  "activeVersion": "1631051926282",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -14,7 +14,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_CHURN_10-To45m4yi-IRL6lq6i-s14-pp1-m3",
+  "lastExportedFrom": "A-DKU_CHURN_10-XU9M2MDd-xA6WvnjP-s1-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -308,11 +308,11 @@
     "labels": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631051707143
+    "lastModifiedOn": 1631051926521
   },
   "description": "Customer Segmentation of which customers belong to 5 different types of segmentation.",
   "shortDesc": "Customer Segmentation of which customers belong to 5 different types of segmentation.",
