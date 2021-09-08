@@ -89,27 +89,6 @@
             "resizeImageMode": "FIT_SIZE"
           },
           {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 1,
-              "left": 0,
-              "width": 5,
-              "height": 6
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "variables_importance",
-              "advancedOptions": {}
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "title": "Variables importance",
-            "insightId": "xoqKvbY",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "ORIG_SIZE"
-          },
-          {
             "tileType": "TEXT",
             "box": {
               "top": 0,
@@ -201,11 +180,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 116,
+    "versionNumber": 117,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631081816850
+    "lastModifiedOn": 1631081823456
   },
   "creationTag": {
     "versionNumber": 0,
