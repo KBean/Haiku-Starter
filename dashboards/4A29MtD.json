@@ -53,27 +53,6 @@
             "resizeImageMode": "FIT_SIZE"
           },
           {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 7,
-              "left": 0,
-              "width": 4,
-              "height": 14
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "displayMode": "bc_confusion",
-              "advancedOptions": {}
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "title": "Confusion Matrix",
-            "insightId": "vReATi5",
-            "insightType": "saved-model_report",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "ORIG_SIZE"
-          },
-          {
             "tileType": "IMAGE",
             "box": {
               "top": 6,
@@ -168,6 +147,26 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "ORIG_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 0,
+              "width": 5,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "variables_importance",
+              "advancedOptions": {}
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "BEvmuF9",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -180,11 +179,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 118,
+    "versionNumber": 119,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631081862834
+    "lastModifiedOn": 1631081926012
   },
   "creationTag": {
     "versionNumber": 0,
