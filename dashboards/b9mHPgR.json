@@ -29,6 +29,7 @@
           }
         ]
       },
+      "title": "Average Churn by State",
       "showTitle": false
     }
   ],
@@ -37,11 +38,11 @@
   "name": "Churn by State",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631081791349
+    "lastModifiedOn": 1631081798568
   },
   "creationTag": {
     "versionNumber": 0,
