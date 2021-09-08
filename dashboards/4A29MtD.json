@@ -167,6 +167,53 @@
             "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 5,
+              "left": 0,
+              "width": 5,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "bc_confusion",
+              "advancedOptions": {
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "CustServ_Calls",
+                    "Total_Charge",
+                    "Intl_Charge",
+                    "Intl_Plan",
+                    "Intl_Calls",
+                    "VMail_Message",
+                    "State",
+                    "Day_Calls",
+                    "Night_Charge",
+                    "total_Mins",
+                    "Account_Length",
+                    "Day_Charge",
+                    "Eve_Charge",
+                    "Night_Mins",
+                    "Eve_Mins",
+                    "Night_Calls",
+                    "Eve_Calls",
+                    "Day_Mins",
+                    "cluster_labels",
+                    "Area_Code",
+                    "VMail_Plan",
+                    "Intl_Mins"
+                  ]
+                }
+              }
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "Ab0xBEw",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -179,11 +226,11 @@
   "name": "Forecasting Customers that are likely to churn",
   "showGrid": false,
   "versionTag": {
-    "versionNumber": 120,
+    "versionNumber": 121,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1631081967517
+    "lastModifiedOn": 1631081988595
   },
   "creationTag": {
     "versionNumber": 0,
