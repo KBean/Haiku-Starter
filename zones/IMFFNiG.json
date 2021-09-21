@@ -15,10 +15,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "geocoded",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "geocoded_prepared",
       "objectType": "DATASET"
     },
