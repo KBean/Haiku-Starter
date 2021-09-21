@@ -1,15 +1,15 @@
 {
-  "projectKey": "DKU_CHURN_10",
+  "projectKey": "PREDICTING_CHURN_PRUNE_FLOW",
   "id": "AUTOMATION",
   "type": "step_based",
   "name": "automation",
-  "active": true,
+  "active": false,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1620250652293
+    "lastModifiedOn": 1632203060266
   },
   "checklists": {
     "checklists": []
