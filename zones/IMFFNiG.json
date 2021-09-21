@@ -13,10 +13,6 @@
     {
       "objectId": "compute_geocoded",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_geocoded_prepared",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
