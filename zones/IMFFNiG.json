@@ -9,10 +9,6 @@
     {
       "objectId": "customers_prepared_prepared",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_geocoded",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
